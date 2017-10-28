@@ -1,0 +1,15 @@
+<h1>Sign Up New Usah!</h1>
+
+<%= render "shared/errors" %>
+
+<form action="<%= new_user_url %>" method="GET">
+  <input type="hidden" name="authenticity_token" value="form_authenticity_token">
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="user[email]">
+
+  <label for="password">Password</label>
+  <input type="text" name="" value="">
+
+  <input type="submit" value="Sign Up">
+</form>
